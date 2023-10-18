@@ -4,7 +4,7 @@ import React from "react"
 
 export default function NavbarDrawer() {
     const { isOpen, onOpen, onClose } = useDisclosure()
-    const [placement, setPlacement] = React.useState('top')
+    const [placement] = React.useState('top')
   
     return (
       <>
