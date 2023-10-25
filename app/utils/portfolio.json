@@ -1,0 +1,44 @@
+[
+    {
+      "title": "Lakoe shop",
+      "content":
+        "Project Lakoe is an E-Commerce project or online shop built to make it easier for MSMEs to sell online, the project uses technology such as typscript for the programming language, we also use frameworks such as remix and for the library we use react, and for the ORM we use prisms and RDBMS that we use, namely portgress and had also migrated using mysql.",
+        "icons": 
+            {
+           "1": "assets/image/icons8-typescript-48.png",
+           "2": "assets/image/icons8-react-native-48.png",
+           "3": "assets/image/icons8-postgresql-48.png",
+           "4": "assets/image/icons8-mysql-48.png",
+           "5": "assets/image/icons8-prisma-orm-48.png"
+        }
+    
+          
+    },
+    {
+      "title": "Circle",
+      "content":
+        "Circle is a social media project such as Twitter or thread for the technology used, namely Node.Js, TypeScript, Express, TypeORM, PostgresSQL, React.js, Axios, Chakra Ui",
+        "icons": 
+        {
+       "1": "assets/image/icons8-typescript-48.png",
+       "2": "assets/image/icons8-nodejs-48.png",
+       "3": "assets/image/icons8-express-js-48.png",
+       "4": "assets/image/icons8-postgresql-48.png",
+       "5": "assets/image/icons8-react-native-48.png",
+       "6": "assets/image/icons8-chakra-ui-48.png"
+    }
+    },
+    {
+      "title": "Brim Shop",
+      "content":
+        "Brim Shop is a hackton project that is given 48 hours, where the ideas made are like an on point system or financial management, the technology used is typscript for the programming language, libray uses react, for the backend side uses express, and RDBMS used is postgresSql.",
+        "icons": {
+       "1": "assets/image/icons8-typescript-48.png",
+       "2": "assets/image/icons8-nodejs-48.png",
+       "3": "assets/image/icons8-express-js-48.png",
+       "4": "assets/image/icons8-postgresql-48.png",
+       "5": "assets/image/icons8-react-native-48.png",
+       "6": "assets/image/icons8-chakra-ui-48.png"
+    }
+    }
+  ]

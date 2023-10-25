@@ -1,60 +1,66 @@
-import { ArrowDownIcon } from "@chakra-ui/icons"
-import { useDisclosure, Button, Drawer, DrawerOverlay, DrawerContent, DrawerHeader, Avatar, Box, Flex, Link, Wrap, WrapItem } from "@chakra-ui/react"
-import React from "react"
+import { TabPanels, TabPanel, TabIndicator, Tab, TabList, Tabs, WrapItem, Avatar, Flex } from "@chakra-ui/react"
+import { motion } from "framer-motion";
+
+
+import JumbotronWithImage from "./jumbotron"
+import Portfolio from "./portfolio"
+import Service from "./Service"
+import ContactMe from "./contact"
+import About from "./about"
+import me from "../assets/image/me2.png"
 
 export default function NavbarDrawer() {
-    const { isOpen, onOpen, onClose } = useDisclosure()
-    const [placement] = React.useState('top')
+
   
     return (
       <>
-     <Box display={"flex"} justifyContent={"center"}>
-        <Button colorScheme='yellow' onClick={onOpen}>
-        <ArrowDownIcon />
-        </Button>
-     </Box>
-        <Drawer placement={placement} onClose={onClose} isOpen={isOpen}>
-          <DrawerOverlay />
-          <DrawerContent  >
-            <DrawerHeader borderBottomWidth='1px'>
-                
-                
-    <Flex
-      as="nav"
-      align="center"
-      justify="space-between"
-      wrap="wrap"
-      padding="1rem"
-    
-    
-    >
-        <Wrap>
-        <WrapItem>
-    <Avatar name='Dan Abrahmov' src='https://bit.ly/dan-abramov' />
-  </WrapItem>
-        </Wrap>
-      <Box>
-        <Link href="/">Home</Link>
-      </Box>
-      <Box>
-        <Link href="/tentang">About</Link>
-        </Box>
-        <Box>
-        <Link href="/layanan">Project</Link>
-        </Box>
-        <Box>
-        <Link href="/kontak">Contact</Link>
-      </Box>
-   
-    </Flex>
-            </DrawerHeader>
-            {/* <DrawerBody>
-              <p>Some contents...</p>
-              <p>Some contents...</p>
-              <p>Some contents...</p>
-            </DrawerBody> */}
-          </DrawerContent>
-        </Drawer>
+      
+       <Tabs variant="unstyled">
+       <Flex alignItems="center" justify="space-between" p={4}>
+        <TabList>
+          <Tab>Home</Tab>
+          <Tab>About</Tab>
+          <Tab>Project</Tab>
+          <Tab>Contact</Tab>
+          <Tab>Service</Tab>
+
+        </TabList>
+          <WrapItem>
+        <Avatar name='Malik Fajar' src={me} />
+      </WrapItem>
+      </Flex>
+        <TabIndicator
+          mt="-1.5px"
+          height="2px"
+          bg="orange.500"
+          borderRadius="1px"
+        />
+        <TabPanels>
+          <TabPanel>
+          <JumbotronWithImage/>
+          </TabPanel>
+          <TabPanel>
+          <About/>
+          </TabPanel>
+          
+          <TabPanel>
+          <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 2}}
+      >
+          <Portfolio/>
+      </motion.div>
+          </TabPanel>
+          <TabPanel>
+          <ContactMe/>
+          </TabPanel>
+          <TabPanel>
+          <Service/>
+          </TabPanel>
+         
+        </TabPanels>
+      </Tabs>
       </>
     )
   }

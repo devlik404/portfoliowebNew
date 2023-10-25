@@ -1,4 +1,4 @@
-import { Box, Button, Grid, GridItem, Input, Textarea,Center,Text} from "@chakra-ui/react";
+import { Box, Button, Grid, GridItem, Input, Textarea,Center,Text, Divider} from "@chakra-ui/react";
 
 
 
@@ -14,24 +14,18 @@ export default function ContactMe() {
     return (
         <Box>
             <Center flexDirection={"column"} mb={"10"}>
-          <Text fontSize="4xl" as='b' m={"6"}>Contact Me</Text>
-          <Text>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eos
-            earum molestiae repellat nisi amet, ullam dolores cupiditate
-            sapiente quos voluptatibus autem vitae nobis iste, velit fugiat
-            sequi quis illo.
-          </Text>
+          <Text fontSize="4xl" as='b' m={"6"}>Contact Me <Divider color={"yellow"}/></Text>
         </Center>
       <Grid templateColumns="repeat(2, 1fr)" gap={4}>
         <GridItem colSpan={{ base: 2, md: 1 }}>
         <Box  p={4} borderWidth="1px" borderRadius="md">
         
       <form onSubmit={handleSubmit}>
-        <Input type="text" placeholder="Nama" mb={4} />
+        <Input type="text" placeholder="Name" mb={4} />
         <Input type="email" placeholder="Email" mb={4} />
-        <Textarea placeholder="Pesan" mb={4} />
-        <Button colorScheme="teal" type="submit">
-          Kirim Pesan
+        <Textarea placeholder="Message" mb={4} />
+        <Button colorScheme="yellow" type="submit">
+         Send Message
         </Button>
       </form>
     </Box>

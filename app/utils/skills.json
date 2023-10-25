@@ -1,0 +1,97 @@
+
+  [
+    {
+      "category": "Frontend",
+      "items": [
+        {
+          "name": "Html",
+          "image": "assets/image/icons8-html5-96.png"
+        },
+        {
+          "name": "Css",
+          "image": "assets/image/icons8-css-96.png"
+        },
+        {
+          "name": "Boostrap",
+          "image": "assets/image/icons8-bootstrap-48.png"
+        },
+        {
+          "name": "Chakra Ui",
+          "image": "assets/image/icons8-chakra-ui-48.png"
+        },
+        {
+          "name": "Materialize",
+          "image": "assets/image/th.png"
+        },
+        {
+          "name": "Javascript",
+          "image": "assets/image/icons8-javascript-48.png"
+        },
+        {
+          "name": "Typescript",
+          "image": "assets/image/icons8-typescript-48.png"
+        },
+        {
+          "name": "Vite",
+          "image": "assets/image/logo.svg"
+        },
+        {
+          "name": "React Js",
+          "image": "assets/image/icons8-react-native-48.png"
+        }
+      ]
+    },
+    {
+      "category": "Backend",
+      "items": [
+        {
+          "name": "Express",
+          "image": "assets/image/icons8-express-js-48.png"
+        },
+        {
+          "name": "Node Js",
+          "image": "assets/image/icons8-nodejs-48.png"
+        },
+        {
+          "name": "Golang",
+          "image": "assets/image/icons8-golang-96.png"
+        },
+        {
+          "name": "Echo",
+          "image": "assets/image/logo-light.svg"
+        }
+      ]
+    },
+    {
+      "category": "Fullstack",
+      "items": [
+        {
+          "name": "Remix",
+          "image": "assets/image/remix.png"
+        }
+      ]
+    },
+    {
+      "category": "Database & ORM",
+      "items": [
+        {
+          "name": "Mysql",
+          "image": "assets/image/icons8-mysql-48.png"
+        },
+        {
+          "name": "Postgresql",
+          "image": "assets/image/icons8-postgresql-48.png"
+        },
+        {
+          "name": "Prisma",
+          "image": "assets/image/icons8-prisma-orm-48.png"
+        },
+        {
+          "name": "TypeOrm",
+          "image": "assets/image/logo_big.png"
+        }
+      ]
+    }
+  ]
+  
+  
