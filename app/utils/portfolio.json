@@ -9,13 +9,16 @@
            "2": "assets/image/icons8-react-native-48.png",
            "3": "assets/image/icons8-postgresql-48.png",
            "4": "assets/image/icons8-mysql-48.png",
-           "5": "assets/image/icons8-prisma-orm-48.png"
-        }
+           "5": "assets/image/icons8-prisma-orm-48.png",
+           "6": "assets/image/remix1.png"
+           
+        },
+        "image":"assets/image/lakoe.png"
     
           
     },
     {
-      "title": "Circle",
+      "title": "Octagram",
       "content":
         "Circle is a social media project such as Twitter or thread for the technology used, namely Node.Js, TypeScript, Express, TypeORM, PostgresSQL, React.js, Axios, Chakra Ui",
         "icons": 
@@ -26,7 +29,9 @@
        "4": "assets/image/icons8-postgresql-48.png",
        "5": "assets/image/icons8-react-native-48.png",
        "6": "assets/image/icons8-chakra-ui-48.png"
-    }
+    },
+    "image":"assets/image/octagram.png"
+    
     },
     {
       "title": "Brim Shop",
@@ -39,6 +44,22 @@
        "4": "assets/image/icons8-postgresql-48.png",
        "5": "assets/image/icons8-react-native-48.png",
        "6": "assets/image/icons8-chakra-ui-48.png"
-    }
+    },
+    "image":"assets/image/brim.png"
+    },
+    {
+      "title": "Personal Web",
+      "content":
+        "Brim Shop is a hackton project that is given 48 hours, where the ideas made are like an on point system or financial management, the technology used is typscript for the programming language, libray uses react, for the backend side uses express, and RDBMS used is postgresSql.",
+        "icons": {
+       "1": "assets/image/icons8-html5-48.png",
+       "2": "assets/image/icons8-css-48.png",
+       "3": "assets/image/icons8-bootstrap-48.png",
+       "4": "assets/image/icons8-golang-48.png",
+       "5": "assets/image/echo-50.png"
+
+      
+    },
+    "image":"assets/image/personal.png"
     }
   ]

@@ -10,18 +10,23 @@ import {
   Center,
   Box,
 } from "@chakra-ui/react";
+import Navbar from "~/components/navbar";
 
 export default function Service() {
   return (
     <>
-      <Box bg={"blackAlpha.50"}>
+      <Box position={"sticky"}>
+
+<Navbar/>
+</Box>
+      <Box h={"100vh"} mt={"-20"}>
         <Center flexDirection={"column"} mb={"10"}>
           <Text fontSize="4xl" as='b'  m={"6"}>Our Service</Text>
           
         </Center>
-        <Center>
-          <SimpleGrid spacing={4} columns={3}>
-            <Card>
+        <Center >
+          <SimpleGrid spacing={4} columns={3} zIndex={-9}>
+            <Card >
               <CardHeader>
                 <Heading size="md"> Web development</Heading>
               </CardHeader>

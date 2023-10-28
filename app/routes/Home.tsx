@@ -1,15 +1,15 @@
 
-import NavbarDrawer from '~/components/drawer';
+import JumbotronWithImage from "./jumbotron";
 
 
 
 
 export default function Home() {
+
   return (
     <>
     
-    <NavbarDrawer/>
-
+  <JumbotronWithImage/>
     </>
   );
 }

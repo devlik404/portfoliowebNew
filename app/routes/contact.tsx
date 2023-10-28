@@ -1,4 +1,5 @@
 import { Box, Button, Grid, GridItem, Input, Textarea,Center,Text, Divider} from "@chakra-ui/react";
+import Navbar from "~/components/navbar";
 
 
 
@@ -12,7 +13,12 @@ export default function ContactMe() {
       };
 
     return (
-        <Box>
+      <>
+      <Box position={"sticky"}>
+
+      <Navbar/>
+      </Box>
+        <Box mt={"-20"}>
             <Center flexDirection={"column"} mb={"10"}>
           <Text fontSize="4xl" as='b' m={"6"}>Contact Me <Divider color={"yellow"}/></Text>
         </Center>
@@ -38,5 +44,6 @@ export default function ContactMe() {
         </GridItem>
       </Grid>
         </Box>
+      </>
     );
   }

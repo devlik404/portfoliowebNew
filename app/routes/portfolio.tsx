@@ -13,6 +13,7 @@ import {
   Divider,
 } from "@chakra-ui/react";
 import articles from "../utils/portfolio.json";
+import Navbar from "~/components/navbar";
 
 
 
@@ -20,7 +21,11 @@ export default function Portfolio() {
     
   return (
     <>
-      <Box>
+      <Box position={"sticky"} >
+
+<Navbar/>
+</Box >
+      <Box mt={"-20"}  >
         <Center flexDirection={"column"} mb={10}>
           <Text fontSize="4xl" as="b" m={6}>
             My Portfolio
@@ -30,6 +35,7 @@ export default function Portfolio() {
         {articles.map((data, index) => (
           <>
             <SimpleGrid
+           
               spacing={8}
               p={5}
               columns={{ base: 1, md: 2 }}
@@ -54,7 +60,7 @@ export default function Portfolio() {
               </Box>
 
               {/* Kolom kanan dengan gambar dan artikel */}
-              <Center>
+              <Center zIndex={-9}>
                 <SimpleGrid spacing={4} columns={1}>
                   <Card key={index}>
                     <CardHeader>
@@ -62,8 +68,8 @@ export default function Portfolio() {
                         <Stack direction="row">
                           <Image
                             objectFit="cover"
-                            src="https://bit.ly/dan-abramov" // Ganti dengan URL gambar yang sesuai
-                            alt="Dan Abramov"
+                            src={data.image}
+                            alt={data.title}
                           />
                         </Stack>
                       </Heading>
