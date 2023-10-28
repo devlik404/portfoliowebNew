@@ -1,4 +1,4 @@
-import { HamburgerIcon, AddIcon, ExternalLinkIcon } from "@chakra-ui/icons";
+import { HamburgerIcon } from "@chakra-ui/icons";
 import { Menu, MenuButton, IconButton, MenuList, MenuItem,Box, Flex } from "@chakra-ui/react";
 import { Link } from "@remix-run/react";
 // import me from "../assets/image/me2.png"
